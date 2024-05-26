@@ -1,0 +1,115 @@
+/* react-syntax-highlighterのスタイルを上書きするためここで定義 */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+.aiResponse {
+  position: relative;
+}
+.aiResponse code {
+  font-family: 'Source Code Pro', monospace !important;
+  font-weight: inherit;
+  white-space: pre-wrap !important;
+}
+
+.aiResponse h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.aiResponse h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 14px;
+  color: #444;
+}
+
+.aiResponse h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.aiResponse h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.aiResponse p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.aiResponse ul,
+.aiResponse ol {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.aiResponse li {
+  list-style-type: disc;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 5px;
+}
+
+.aiResponse ul:has(> li > input[type='checkbox']) {
+  margin: 20px 0;
+  padding-left: 5px; /* チェックボックスを含むliを持つulにマージンを適用 */
+}
+
+.aiResponse li:has(> input[type='checkbox']) {
+  list-style-type: none;
+  margin-top: 7px;
+}
+
+.aiResponse hr {
+  margin-top: 30px;
+  visibility: hidden;
+}
+
+.aiResponse blockquote {
+  border-left: 4px solid #ccc;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  font-style: italic;
+}
+
+.aiResponse table {
+  margin: 30px auto;
+  width: 100%;
+  border-collapse: collapse; /* セルの間の境界線を合わせる */
+  overflow-x: auto;
+  table-layout: fixed; /* テーブルのレイアウトを固定することで、セルの幅を一定に保つ */
+}
+
+.aiResponse tr,
+.aiResponse th,
+.aiResponse td {
+  max-width: 300px;
+  white-space: pre-wrap;
+  height: auto;
+}
+
+.aiResponse th,
+.aiResponse td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+  max-width: 300px; /* 最大幅を設定し、折り返しを促す */
+}
+
+.aiResponse tr {
+  height: auto; /* 行の高さを内容に応じて自動調整 */
+}
+
+.aiResponse th {
+  background-color: #f2f2f2;
+  font-weight: 600;
+}

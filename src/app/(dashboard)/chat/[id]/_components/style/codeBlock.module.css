@@ -1,0 +1,11 @@
+/* react-syntax-highlighterのスタイルを上書きするためここで定義_言語なしのインラインブロック */
+pre code.no_language {
+  display: block;
+  background-color: rgb(239, 238, 238);
+  color: #121212;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-weight: 400 !important;
+  padding: 10px 30px;
+  margin: 10px 0 20px;
+}
