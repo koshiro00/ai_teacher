@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { supabase } from '@/app/_utils/supabase/supabase';
-const baseURL = process.env.NEXT_PUBLIC_APP_BASE_URL + '/api';
+// const baseURL = process.env.NEXT_PUBLIC_APP_BASE_URL + '/api';
 
-export const api = axios.create({ baseURL });
+export const api = axios.create();
 
 // tokenが取得できる状態の場合はAuthrizationに追加
 supabase.auth.onAuthStateChange((_event, session) => {
